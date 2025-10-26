@@ -1,0 +1,370 @@
+/* resetear formatos de navegador */
+* {
+  padding: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* fin resetear datos de navegador */
+
+
+/*.container {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 2fr;
+  grid-template-rows: repeat(10, 1fr);
+  gap: 10px;
+}*/
+
+/* Formato Header */
+.header {
+  background-color: whitesmoke;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column: 3 / 6;
+  align-items: center;
+  /*grid-row: 2 / 2;*/
+}
+
+.nav {
+  display: grid;
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  align-items: center;
+}
+
+.main {
+  display: grid;
+  grid-template-areas:
+    "n1 n1 n1 aside"
+    "n2 n3 n4 aside"
+    "n5 n6 n7 aside"
+  ;
+  /*align-items: center;*/
+  align-items: stretch;
+    
+}
+
+.n1, .n2, .n3, .n4, .n5, .n6, .n7 {
+  padding: 11px;
+  margin: 5px;  
+}
+
+.n1 {
+  background-color: lightgreen;
+  grid-area: n1;
+  /*grid-row: 1 / 3;*/
+  /*margin-bottom: 20px;*/
+ /*padding: 11px;*/
+}
+
+.n2 {
+  background-color: lightslategrey;
+  grid-area: n2;
+}
+
+
+.n3 {
+  background-color: burlywood;
+  grid-area: n3;
+}
+
+.n4 {
+  background-color: lightgray;
+  grid-area: n4;
+}
+
+.n5 {
+  background-color: #fb8a00;
+  grid-area: n5;
+}
+
+.n6 {
+  background-color: lightblue;
+  grid-area: n6;
+}
+
+.n7 {
+  background-color: violet;
+  grid-area: n7;
+}
+
+/*.n8 {
+  background-color: violet;
+  grid-area: n8;
+}*/
+
+.aside {
+  background-color: lightgoldenrodyellow;
+  grid-area: aside;
+}
+
+.item {
+  border-radius: 11px;
+}
+
+
+/* Formato a títulos h1 */
+h1 {
+  color: #000000;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+/* fin formato h1*/
+
+/* Formato a títulos h2 */
+h2 {
+  color: #257317;
+}
+
+/* fin formato h2 */
+
+/* Formato a títulos h3 */
+h3 {
+  color: #569A5F;
+}
+
+/* fin formato h3*/
+
+/* Formato a títulos h4 */
+h4 {
+  color: #569A5F;
+}
+
+/* fin formato h4*/
+
+/* Formato a párrafo */
+p {
+  color: #0b2206;
+  font-size: 1.1em;
+}
+
+/* fin formato párrafo*/
+
+/* Formato a enlaces */
+a {
+  text-decoration: unset;
+  text-overflow: #257317;
+}
+
+/* fin formato enlace */
+
+/* Formato de imagen redonda */
+img {
+  max-width: 11%;
+  height: auto;
+  border-radius: 50%;
+  /*display: block;*/
+  margin: 0 auto;
+}
+
+/* fin formato imagen logo*/
+
+/* Dar formato a menú*/
+nav ul {
+  text-align: center;
+  list-style-type: none;
+  /* Quitamos las viñetas de la lista */
+}
+
+nav li {
+  display: inline;
+  /* Ítems del menú en una línea horizontal */
+  margin-left: 1%;
+}
+
+/* fin formato ul y li */
+
+.footer {
+  display: grid;
+  grid-template-areas:
+    "der der"
+    "redes redes"
+  ;
+}
+
+
+/* Dar fomato menpu del footer */
+footer ul {
+  text-align: center;
+  list-style-type: none;
+  /* Quitamos las viñetas de la lista */
+  text-decoration: unset;
+  text-overflow: #257317;
+}
+
+footer li {
+  display: inline;
+  /* Ítems del menú en una línea horizontal */
+  margin-left: 1%;
+}
+
+/* fin formato menú de footer li y ul*/
+
+/* Dar fomato al párrafo footer */
+footer p {
+  text-align: center;
+  font-weight: bold;
+}
+
+/* fin formato párrafo del footer */
+
+/* Formato a formulario */
+/* Estilo para el elemento <form> */
+form {
+  display: flex;
+  /* Usa Flexbox para organizar elementos */
+  flex-direction: column;
+  /* Alinea elementos en columna */
+  gap: 11px;
+  /* Espacio entre los elementos del formulario */
+}
+
+/* Estilo para las etiquetas <label> */
+label {
+  font-weight: bold;
+  /* Texto en negrita */
+  margin-bottom: 5px;
+  /* Espacio debajo de la etiqueta */
+}
+
+/* Estilo para los campos de entrada <input> */
+input[type="text"] {
+  padding: 10px;
+  /* Espacio interno del input */
+  border: 1px solid #ccc;
+  /* Borde gris */
+  border-radius: 4px;
+  /* Esquinas redondeadas */
+  font-size: 16px;
+  /* Tamaño de la fuente */
+}
+
+/* fin estilo para el formulario */
+
+/*******PARA TABLETAS***********/
+/*************************/
+/*************************/
+@media (min-width: 431px) and (max-width: 800px) 
+{
+    .main {
+        grid-template-areas:
+            "n1 n2"
+            "n3 n4"
+            "n5 n6"
+            "n7 n8"            
+            ;
+    }
+
+.n1, .n2, .n3, .n4, .n5, .n6, .n7 {
+  padding: 11px;
+  margin: 5px;  
+}
+
+
+.n1 {
+  background-color: lightgreen;
+  grid-area: n1;
+  /*grid-row: 1 / 3;*/
+  /*margin-bottom: 20px;*/
+ /*padding: 11px;*/
+}
+
+.n2 {
+  background-color: lightslategrey;
+  grid-area: n2;
+}
+
+
+.n3 {
+  background-color: burlywood;
+  grid-area: n3;
+}
+
+.n4 {
+  background-color: lightgray;
+  grid-area: n4;
+}
+
+.n5 {
+  background-color: #fb8a00;
+  grid-area: n5;
+}
+
+.n6 {
+  background-color: lightblue;
+  grid-area: n6;
+}
+
+.n7 {
+  background-color: violet;
+  grid-area: n7;
+}
+
+.aside {display:none;}
+
+}
+
+
+/******Vista para Celulares*************/
+/*-------------------------------------*/
+@media (min-width: 320px) and (max-width: 430px) {
+    .main {
+        grid-template-areas:
+            "n1 n1"
+            "n2 n3"
+            "n4 n5"
+            "n6 n7"            
+            ;
+    }
+
+.n1, .n2, .n3, .n4, .n5, .n6, .n7 {
+  padding: 11px;
+  margin: 5px;  
+}
+
+.n1 {
+  background-color: lightgreen;
+  grid-area: n1;
+  /*grid-row: 1 / 3;*/
+  /*margin-bottom: 20px;*/
+ /*padding: 11px;*/
+}
+
+.n2 {
+  background-color: lightslategrey;
+  grid-area: n2;
+}
+
+
+.n3 {
+  background-color: burlywood;
+  grid-area: n3;
+}
+
+.n4 {
+  background-color: lightgray;
+  grid-area: n4;
+}
+
+.n5 {
+  background-color: #fb8a00;
+  grid-area: n5;
+}
+
+.n6 {
+  background-color: lightblue;
+  grid-area: n6;
+}
+
+.n7 {
+  background-color: violet;
+  grid-area: n7;
+}
+
+.aside {display:none;}
+
+}
