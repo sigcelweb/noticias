@@ -198,10 +198,11 @@ header li {
   font-weight: bold !important;
   font-size: small !important;
   border-radius: 11px;
+  list-style-type: decimal;
 }
 
-.aside ul {
-  padding: 0px 0px 11px 11px;
+.aside ol {
+  padding: 0px 0px 11px 18px;
   color: #111;
   font-weight: bold;  
 }
