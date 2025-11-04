@@ -305,6 +305,7 @@ a {
 .footer a:hover {
   /*background-color: red; /* Cambia a rojo cuando el cursor está encima */
   color: lightblue;          /* Cambia el color del texto */
+  text-decoration: underline;
 }
 
 .footer a:visited {
